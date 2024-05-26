@@ -1,0 +1,246 @@
+.navbar {
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin-bottom: 20px;
+}
+.dark {
+    width: 70px;
+}
+a{
+    color: var(--redColor);
+}
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo_burger{
+    width: 40px;
+    display: none;
+}
+.nav-logo p {
+    color: var(--redColor);
+    font-size: 38px;
+    font-weight: 600;
+    list-style: none;
+}
+
+.nav-menu {
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: var(--textColor);
+    font-size: 30px;
+    font-weight: 700;
+    display: none;
+    flex-direction: column;
+    background-color: var(--backColor);
+    position: absolute;
+    top: 150px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-menu .li1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    color: var(--textColor);
+    cursor: pointer;
+}
+
+.nav-menu hr {
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: var(--textColor);
+}
+
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.nav-login-cart button {
+    width: 157px;
+    height: 58px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: var(--textColor);
+    font-size: 20px;
+    font-weight: 500;
+    background: var(--backColor);
+    cursor: pointer;
+}
+
+.nav-cart-count {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: -55px;
+    border-radius: 11px;
+    font-size: 14px;
+    background: var(--textColor);
+    color:var(--backColor);
+}
+
+.nav-dropdown {
+    display: none;
+    transform: rotate(180deg);
+}
+
+.open {
+    display: block;
+}
+
+.btnnnn {
+    width: 40px;
+}
+
+.kom {
+    width: 100px;
+    height: 100px;
+}
+@media (max-width: 1400px) {
+    .nav-menu {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .nav-menu {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav-menu {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .nav-menu {
+        gap: 15px;
+    }
+    .logo_burger{
+        display: block;
+    }
+}
+
+@media (max-width: 1005px) {
+    .nav-menu {
+        gap: 10px;
+    }
+    .nav-logo p{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 900px) {
+    .nav-menu {
+        gap: 5px;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav-menu {
+        gap: 0;
+    }
+
+    .nav-login-cart {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-login-cart {
+        justify-content: center;
+    }
+    .nav-logo p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-logo p {
+        font-size: 30px;
+    }
+
+    .nav-login-cart button {
+        width: 120px;
+        height: 45px;
+        font-size: 16px;
+        border-radius: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav-logo p {
+        font-size: 24px;
+    }
+
+    .nav-login-cart button {
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+    @media (max-width: 400px) {
+    .nav-logo p {
+        font-size: 20px;
+    }
+
+    .nav-login-cart button {
+        width: 80px;
+        height: 35px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1100px) {
+  .burger-icon {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex !important;
+    flex-direction: row;
+    position: static; 
+    background-color: transparent;
+  }
+
+  .nav-menu li {
+    margin: 0 15px;
+  }
+
+  .li1 hr {
+    display: block;
+  }
+}

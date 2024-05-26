@@ -1,0 +1,38 @@
+:root{
+    --textColor: black;
+    --backColor: white;
+    --hrColor: #e2e2e2;
+    --popular:#252525;
+    --redColor:black;
+}
+.darkMode{
+    --textColor: white;
+    --backColor:  #222020;
+    --hrColor: black;
+    --popular: white;
+    --redColor:red;
+}
+*{
+    margin:0;
+    padding: 0;
+}
+
+.con{
+    max-width: 1500px;
+    margin: auto;
+}
+
+#Parent{
+    width: 100%;
+    background-color: var(--backColor);
+    color: var(--textColor);
+    transition: 0.5s;
+}
+
+body{
+    transition: 0.5s;
+}
+
+.dev-banner{
+    display: none;
+}
